@@ -32,7 +32,7 @@ type URLModel struct {
 
 // fieldnames []string{"priority" "changefreq" "lastmod" "expires" "host" "images"
 // "video" "geo" "news" "videos" "mobile" "alternate" "xhtml:link" "pagemap"}
-var fieldnames = ToLowerString(structs.New(&URLModel{}).Names())
+var fieldnames = ToLowerString(structs.New(&URLModel{}).Map())
 
 // NewSitemapURL returns the created the SitemapURL's pointer
 // and it validates URL types error.
